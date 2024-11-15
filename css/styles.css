@@ -1,0 +1,127 @@
+/*-----------------------------------------------------------------------------------*/
+/*ALL PAGE*/
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.75fr;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+    "hd hd hd"
+    "mn mn sd"
+    "ft ft ft"
+    ;
+}
+header {
+    grid-area: hd;
+    background-color:rgb(20, 23, 22);
+}
+main {
+    grid-area: mn;
+    background-color:rgb(255, 255, 255);
+}
+footer {
+    grid-area: ft;
+    background-color:rgb(108, 116, 113);
+}
+a:visited{
+    color: aliceblue;
+}
+a:hover {
+    color:rgb(46, 46, 219);
+}
+a {
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*HEADER*/
+nav {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr) 6fr repeat(3, 1fr);
+}
+nav div{
+    text-align: center;
+    color: white;
+    padding: 0.5em 0em 2em ;
+    border: 2px solid black;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*MAIN*/
+.nom {
+    margin-left: 10px;
+}
+.img{
+    max-width: 350px;
+    margin: auto;
+}
+figure {
+    background-color: white;
+    border: solid black 1px;
+    padding: 10px;
+    width: fit-content;
+    float: left;
+    font-style: italic;
+}
+p {
+    margin: 0;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*ASIDE*/
+.asideRonaldo{
+    grid-area: sd;
+    background-color:rgb(20, 139, 99);
+}
+.asideMessi {
+    grid-area: sd;
+    background-color:rgb(42, 153, 201);
+}
+.container {
+    margin: auto;
+    width: 80%;
+    height: 200px;
+    gap: 1em;
+    text-align: center;
+
+}
+.container img{
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 10%;
+    transition: all ease-in-out 0.5s;
+}
+.container img:hover {
+    height: 100%;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*FOOTER*/
+footer div{
+    display:inline-block;
+}
+ul{
+    list-style-type: none;
+}
+.auteur {
+    float: right;
+    padding: 0.5em 1em 0em 1em;
+}
+.text {
+    padding: 0.5em 0em 0.5em 1em;
+}
+/*-----------------------------------------------------------------------------------*/

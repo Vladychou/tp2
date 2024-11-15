@@ -1,0 +1,196 @@
+/*-----------------------------------------------------------------------------------*/
+/*ALL PAGE*/
+body {
+    margin:0;
+    display: grid;
+    grid-template-columns: 0.75fr repeat(3,2fr) 1fr;
+    grid-template-rows: max-content;
+    grid-template-areas: 
+    "hd mn mn mn sd"
+    "hd mn mn mn sd"
+    "ft ft ft ft ft"
+    ;
+}
+header {
+    grid-area: hd;
+    background-color:rgb(20, 23, 22);
+}
+footer {
+    grid-area: ft;
+    background-color:rgb(108, 116, 113)
+}
+aside {
+    grid-area: sd;
+    background-color: rgb(76, 157, 157);
+}
+a:visited{
+    color: aliceblue;
+}
+a:hover {
+    color:rgb(46, 46, 219);
+}
+a {
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------------------------------------------------------------------------*/
+/*HEADER NAV*/
+nav {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+}
+nav div {
+    padding: 2em;
+    width: 65%;
+    text-align: center;
+    margin-bottom: 1em;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*MAIN GRID*/
+main {
+    grid-area: mn;
+    background-color:rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas:
+    "h1 h1 h1"
+    "d1 d2 d3"
+    "h2 h2 h2"
+    "d5 d6 d7"
+    "h3 h3 h3"
+    "d9 d10 d11"
+    ;
+}
+main > div {
+    margin: auto;
+    border: 1px solid rgb(104, 101, 101);
+    margin-bottom: 2em;
+}
+#h1{
+    grid-area: h1;
+}
+#h2{
+    grid-area: h2;
+}
+#h3{
+    grid-area: h3;
+}
+#div1{
+    grid-area: d1;
+}
+#div2{
+    grid-area: d2;
+}
+#div3{
+    grid-area: d3;
+}
+#div4{
+    grid-area: d5;
+}
+#div5{
+    grid-area: d6;
+}
+#div6{
+    grid-area: d7;
+}
+#div7{
+    grid-area: d9;
+}
+#div8{
+    grid-area: d10;
+}
+#div9{
+    grid-area: d11;
+}
+.titre {
+    text-align: center;
+}
+.green {
+    background-color: rgb(30, 180, 30);
+    padding: 4em;
+}
+.opFirst {
+    opacity: 1;
+}
+.opSeconde {
+    opacity: 0.5;
+}
+.opThird {
+    opacity: 0.1;
+}
+.description {
+    text-align: center;
+    width: 150px;
+    padding: 10px;
+}
+.img {
+    background-size: contain;
+    background-position: center;
+    padding: 4em;
+}
+#img1 {
+    background-image: url("../images/SportingCP.jpg");
+}
+#img2 {
+    background-image: url("../images/ManchesterUnited.jpg");
+}
+#img3 {
+    background-image: url("../images/AlNassr.jpg");
+}
+
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*ASIDE*/
+.divsd {
+    padding-left: 0.5em;
+}
+.h1sd {
+    padding-left: 0.25em;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*FOOTER*/
+footer div{
+    display:inline-block;
+}
+ul{
+    list-style-type: none;
+}
+.auteur {
+    float: right;
+    padding: 0.5em 1em 0em 1em;
+}
+/*----------------------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------------------*/
+/*HOVER*/
+nav div:hover {
+    background-color: rgb(69, 64, 64);
+}
+.img:hover {
+    outline: 2px solid black;
+    opacity: 0.7;
+}
+#div4:hover {
+    outline: 2px solid black;
+}
+#div5 > .green:hover {
+    background-color: rgb(124, 39, 39);
+}
+#div6:hover {
+    opacity: 0.1;
+    transition: all ease-in-out 0.5s;
+}
+/*----------------------------------------------------------------------------------------------*/
